@@ -3,10 +3,10 @@ require_once( dirname(__FILE__).'/crud_class.php' );
 
 
 $DB_CRED	= array(
-	"host" => 'mysql.cs.uky.edu',
-	"name" => 'shliu2',
-	"user" => 'shliu2',
-	"pass" => 'u0000155'
+	"host" => '',
+	"name" => '',
+	"user" => '',
+	"pass" => ''
 	);
 
 try
