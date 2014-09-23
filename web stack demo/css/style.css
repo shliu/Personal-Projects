@@ -1,0 +1,200 @@
+body {
+	background:#99cee8;/* url(../css/bodyBG.jpg) no-repeat center top;*/
+	margin:0;
+	padding:0;
+	border:0;			/* This removes the border around the viewport in old versions of IE */
+	width: 90%;
+	margin-left: auto;
+	margin-right: auto;
+	min-width: 1000px;    	/* Minimum width of layout - remove line if not required */
+					/* The min-width property does not work in old versions of Internet Explorer */
+}
+
+
+.clear{
+	clear: both;
+}
+
+
+.italic{
+	font-style: italic;
+}
+
+.full-width{
+	width: 100%;
+}
+.half-width{
+	width: 50%;
+}
+
+
+.ui-dialog{
+	box-shadow: #777 5px 5px 5px;
+}
+
+
+/******************************** Banner ***********************************/
+@font-face {
+	font-family: 'Calligraph421_BT';
+	src: url("Calligraph421_BT/Calligraph421_BT.eot?#iefix") format("embedded-opentype"),
+		 url("Calligraph421_BT/Calligraph421_BT.woff") format("woff"), 
+	     url("Calligraph421_BT/Calligraph421_BT.ttf") format("truetype"),
+		 url("Calligraph421_BT/Calligraph421_BT.svg#svgFontName") format("svg");
+}
+	
+.qx-font{
+	font-family: Calligraph421_BT;
+	font-size: 150%;
+}
+
+.arial-font{
+	font-family: Arial, san-serif;
+	font-size:75%;
+}
+
+#banner{
+	width: 100%;
+	text-align: center;
+	color: white;
+}
+
+#banner em{
+	font-size: 300%;
+}
+
+#banner strong{
+	font-size: 400%;
+}
+#banner span{
+	font-size: 200%;
+}
+/*--------------------------- End Banner -------------------------------*/
+
+
+/**************************** Navigation ******************************/
+#nav {
+	width: 100%;
+	margin: 0px;
+	margin-top: 10px;
+	line-height: 100%;
+	
+	padding: 0px;
+	
+	border-radius: 8px;
+	-webkit-border-radius: 8px;
+	-moz-border-radius: 8px;
+	
+	background: #0099DD; /* for non-css3 browsers */
+	filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#0099DD', endColorstr='#2548B4'); /* for IE */
+	background: -webkit-gradient(linear, left top, left bottom, from(#0099DD), to(#2548B4)); /* for webkit browsers */
+	background: -moz-linear-gradient(top,  #0099DD,  #2548B4); /* for firefox 3.6+ */
+
+	border: solid 1px #00AADD;
+}
+#nav > li{
+	border-right: 1px solid #0066CC;
+}
+#nav li {
+	margin: 0px;
+	padding-bottom: 3px;
+	float: left;
+	position: relative;
+	
+	list-style: none;
+	z-index: 100;
+}
+#nav div {
+	padding: 8px 10px;
+	color: white;
+	font-weight: bold;
+}
+/* main level link */
+#nav a {
+	font-family: "Arial", sans-serif;
+	font-size: 75%;
+	color: white;
+	text-decoration: none;
+	display: block;
+	padding:  8px 25px;
+	margin: 0;
+}
+#nav > li > a {
+	font-size: 90%;
+	font-weight: bold;
+}
+/* main level link hover */
+#nav .current a, 
+#nav li:hover > a{
+	background: #13497B;
+}
+#nav > li:first-child:hover > a{
+	border-radius: 8px 0px 0px 8px;
+}
+/* submenu hovering */
+#nav ul a:hover {
+	background: #0066AA;
+}
+/* level 2 list */
+#nav ul {
+	background: #13497B;
+	display: none;
+	margin: 0;
+	padding: 0;
+	width: 185px;
+	position: absolute;
+	top: 35px;
+	left: 0;
+	
+	border: solid 1px #00AADD;
+}
+/* dropdown */
+#nav li:hover > ul {
+	display: block;
+}
+#nav ul li {
+	float: none;
+	margin: 0;
+	padding: 0;
+}
+/* level 3+ list */
+#nav ul ul {
+	left: 181px;
+	top: 3px;
+}
+/* clearfix */
+#nav:after {
+	content: ".";
+	display: block;
+	clear: both;
+	visibility: hidden;
+	line-height: 0;
+	height: 0;
+}
+#nav {
+	display: inline-block;
+}
+/*--------------------------- End Navigation -------------------------------*/
+
+
+/******************************** Contents ***********************************/
+#wrapper {
+	margin: 10px auto;
+	padding: 10px 0px;
+	background: white;
+	border-radius: 8px;
+}
+
+#content{
+	margin: auto;
+	width: 98%;
+}
+/*--------------------------- End Contents -------------------------------*/
+
+
+/******************************** Footer ***********************************/
+#footer{
+	font-size: 80%;
+	font: normal 11px Verdana, Geneva, sans-serif;
+    color:#1c98d3;
+}
+/*--------------------------- End Footer -------------------------------*/

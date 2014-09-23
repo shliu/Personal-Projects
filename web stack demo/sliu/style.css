@@ -1,0 +1,29 @@
+.placeholder-active{
+	color	: #a1a1a1;
+	font-style: italic;
+	}
+	
+.ajax-loading{
+	z-index: 100;
+	position: fixed;
+	right: 0px;
+	background: gray;
+	border: 2px black solid;
+	padding: 4px;
+	display: none;
+	border-radius: 5px;
+	}
+	
+.ajax-loading-img{
+	display: inline-block;
+	width: 65px;
+	height: 20px;
+	background-image: url('ajax-loader.gif');
+	background-repeat: no-repeat;
+	}
+	
+.ajax-loading-text{
+	display: inline-block;
+	vertical-align: top;
+	color: white;
+	}
